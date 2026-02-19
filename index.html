@@ -1,0 +1,457 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title><img src="https://i.ibb.co/Z1JtDxZB/IMG-20260218-WA0009-1.jpg"  style="width:50px; height:50px; clip-path:circle(50% at 50% 50%);">MindyEntreprise</title>
+</head>
+<style>
+    body,html{
+        margin:0;
+        padding:0;
+    }
+    body{
+        text-align:center;
+    }
+    #pointer{
+        cursor:pointer;
+        font-size:40px;
+      
+        margin:0;
+        padding:0;
+    }
+    nav{
+        
+        
+        width:100%;
+        height:200px;
+        background:#ccc;
+       
+        left:0px;
+     position:relative;
+        opacity:0.4;
+    }
+    nav a{
+        text-decoration:none;
+        color:black;
+        opacity:1.5;
+       
+    }
+
+#point{
+    display:none;
+}
+#div{
+    position:relative;
+    left:45%;
+    background:skyblue;
+     clip-path:circle(50% 50% at 50%);
+     height:50px;
+     width:50px;
+     text-align:center;
+     border-radius:300px;
+}
+
+
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ /* pour les titres */
+    .h{
+        color:#1c1c1e;
+    }
+ main{
+        display:flex;
+        flex-direction:column;
+        align-items:center;
+        text-align:center;
+    }
+    /*  pour 3 points alignés  */
+ 
+ /* for the logo */
+ #me{
+     position:relative;
+     right:0px;
+     color:#E6C200;
+     font-size:16px;
+ }
+#header{
+     display:flex;
+     flex-direction:line;
+ }
+ /* for 1st with options*/
+ #site{
+     border:1px solid #ddd;
+     border-radius:15px;
+     width:80%;
+     text-align:;
+     color:#1c1c1e;
+ }
+ /* sites ad */
+ #public{
+     border-radius:20px;
+     width:95%;
+     height:400px;
+     background:#eee;
+     border:1px solid #ccc;
+     overflow-y:hidden;
+     overflow-x:auto;
+     gap:30px;
+     scroll-snap-type:x mandatory;
+     display:flex;
+     align-items:center;
+ }
+ 
+ /* for  div containing ads */
+ .ad{
+     width:180px;
+     height:300px;
+     border:1px solid #bbb;
+     flex-shrink:0;
+     scroll-snap-align:start;
+     color:#E6C200;
+     font-size:14px;
+     background:white;
+      box-shadow:0 2px 8px rgba(0,0,0,0.2);
+ }
+ 
+ /* bouton animé */
+ #btn{
+     background:white;
+     box-shadow:0 2px 8px rgba(0,0,0,0.2);
+     width:40px;
+     height:40px;
+     clip-path:circle(50% 50% at 50%);
+     border:1px solid white;
+     font-weight:bold;
+     border-radius:300px;
+     color:#E6C200;
+     font-size:30px;
+     text-align:center;
+ }
+ /* bouton message */
+ .message{
+     border:1px solid green;
+     background:#f6f6f6;
+     text-align:center;
+     color:#2e7d32;
+     width:180px;
+     font-size:25px;
+     box-shadow:0 2px 8px rgba(0,0,0,0.2);
+     border-radius:25px;
+     
+ }
+ #a{
+     text-decoration:none;
+ }
+ 
+ 
+ 
+/* id to animate the round button */ 
+ 
+#for{
+ animation-name:moveIt;
+  animation-duration: 2s;
+  animation-delay: 1s;
+  animation-iteration-count: infinite;
+         
+} 
+ 
+ a #message:active{
+     transform:scale(0.8);
+ }
+ 
+ @keyframes moveIt{
+     0%{left:0px;}
+     100%{left:5px;}
+    
+ }
+ /* div for the message and animed btn   */
+ #anim{
+     display:flex;
+     flex-direction:line;
+     gap:20px;
+ }
+ 
+ /* images in div overflow*/
+ .img{
+     width:100%;
+     height:250px;
+ }
+ 
+ /* what is a vitrine web site */
+ #hide{
+ display:none;
+     font-size:16px;
+     color:#1c1c1e;
+     font-family:serif;
+     border-top:1px solid #ddd;
+      border-bottom:1px solid #ddd;
+      border-radius:15px;
+ }
+ 
+ footer{
+     width:100%;
+     background:skyblue;
+     opacity:0.5;
+     text-align:center;
+ }
+ 
+ 
+ /* for types of site section */
+ 
+ 
+ .column{
+     display: flex;
+     flex-direction:column;
+     gap:20px;
+ }
+ 
+ /* different types */
+ .span{
+     border:1px solid white;
+     box-shadow:0 2px 8px rgba(0,0,0,0.2);
+     text-align:center;
+     color:#E6C200;
+     font-size:18px;
+ }
+ 
+ .span:active{
+     color:skyblue;
+     border:1px solid skyblue;
+     transform:scale(0.9);
+ }
+ 
+ 
+ 
+</style>
+<body>
+    <header>
+  <div id="header">     
+<div id="me"> <img src="https://i.ibb.co/Z1JtDxZB/IMG-20260218-WA0009-1.jpg"  style="width:50px; height:50px; clip-path:circle(50% at 50% 50%);"><br>MindyEntreprise</div>            
+        
+        
+  <br>      
+        
+        
+<div id="div">
+      <span id="pointer">&#8942</span></div></div>
+      
+      <span id="point">
+      <nav >
+          <br><br>
+          <a href="tel:+2432151402"><strong>contactez l'entreprise MdE</strong></a>
+          <br><br>
+          <button onclick="shareSite()" style="border:none; background:none; font-size:18px;"><strong>partager le site</strong></button>
+          <br><br>
+          <a href="#"><strong>comprendre comment le site sera conçu</strong></a>
+          <br><br>
+      </nav>
+      </span>
+      
+    </header>
+    
+    
+    
+    
+    
+ 
+    <br><br><br><br><br>
+    <main>
+        <!-- 1st title -->
+        <h1 class="h">Boostez votre visibilité avec un <br>site.</h1><br><br><br>
+    
+    <div id="site">
+        <p style="border-bottom:1px solid #eee;width:100%;height:100%;background:#eee; padding:0; margin:0; border-radius:15px;"><br>Créer votre propre site<br><br></p>
+        <p>un site avec:</p>
+      <ol>
+          <li>hébergement</li>
+          <li>logo du site(choix)</li>
+          <li>Lien personnalisé</li>
+          <li>partage depuis le site</li>
+          <li>Ajout des contenus personnalisé</li>
+      </ol>  
+        <br><br>
+    </div><br><br><br><p style="font-size:20px;border:1px solid white; background:white; box-shadow :0 2px 8px rgba(0,0,0,0.2);border-right:10px solid skyblue;width:90%;border-left:10px solid skyblue;">Commencer maintenant avec un site vitrine</p>
+ <br><br><br><br>
+<!-- to know what is a vitrine web site--> 
+ <button onclick="site()" style="color:#1c1c1e; text-decoration :underline;border:none; background:none;">c'est  quoi un site vitrine ?</button>
+ <br>
+ <!--  -->
+ <p id="hide"><br><br>Un site vitrine est un site qui fait la présentation d'une entreprise,d'une boutique et plusieurs autres organisations selon leur besoin.
+ <br><br>
+ Le site décrit cette organisation,ce qu'elle fait,vend,...
+ Leur historique et comment les contacter.
+ <br><br>
+ un peu comme une publicité.<br><br></p>
+ 
+ 
+
+<br><br> <!-- this shows sites we created -->
+<p> Visiter certains de nos sites créés </p>
+<br><br>
+
+<!-- for the site ads -->
+ <div id="public">
+     <!-- 1st ad -->
+     <div class="ad"><img src="https://i.ibb.co/qF9pFgk4/IMG-20260203-134032-095.jpg" alt="" class="img">un site pour les maillots,<a href="is.gd/Ntalaja">voir plus</a></div>
+     <!-- 2nd ad -->
+     <div class="ad"><img src="https://i.ibb.co/CpRHTpH5/IMG-20260203-134001-315.jpg" alt="" class="img"></div>
+     <!-- 3rd ad -->
+     <div class="ad"><img src="https://i.ibb.co/twjJDwSf/IMG-20260203-140049-391.jpg" alt="" class="img"> site vitrine pour manga,<a href="is.gd/MangaZoneCreator">voir plus</a></div>
+     <!-- 4 -->
+     <div class="ad"><img src="https://i.ibb.co/TM4t2F4v/IMG-20260203-140114-231.jpg" alt="" class="img"></div>
+ </div>  
+ <br><br><br>
+ <p style="font-size:20;">vous voulez avoir votre site,pas de problème.
+<br><strong> Laissez-nous un message et le problème est résolu !!</strong>
+ </p> 
+ <br><br>
+ <hr style="width:80%;">
+ <br><br><br><br>
+ <p>Choisissez le type de site que vous voulez et envoyez un message:</p>
+ <br>
+ 
+ <!-- pour les types de site vitrine -->
+ 
+ <section style="display: flex;flex-direction:line;gap:40px;">
+     <!-- first column -->
+    <div class="column">
+        
+        <span class="span" onclick="window.location.href='sms:+243832151402' ">
+            vêtements 
+            <br>
+        <strong style="color:green;">22$</strong>
+        </span>
+        <span class="span" onclick="window.location.href='sms:+243832151402' ">
+        Chaussures    <br>
+        <strong style="color:green;">19$</strong>
+        </span>
+     
+        <span class="span" onclick="window.location.href='sms:+243832151402' ">
+         salon de coiffure 
+         <br>
+        <strong style="color:green;">15$</strong>  
+        </span>
+    </div>
+    
+    <!-- 2nd column --> 
+    <div class="column">
+   <span class="span"onclick="window.location.href='sms:+243832151402' ">
+   aliments  
+   <br>
+        <strong style="color:green;">18$</strong>  
+   </span>   
+   <span class="span" onclick="window.location.href='sms:+243832151402' ">
+     maillots  <br>
+        <strong style="color:green;">20$</strong>
+   </span>  
+   <span class="span" onclick="window.location.href='sms:+243832151402' ">
+  Autres <br>
+  (précisez)    
+   </span>
+    </div>
+ </section>
+ 
+ 
+<br><br><br><br>
+<div><strong>Comment ça marche?</strong>
+<br><br><br>
+Faites votre choix dans le site,et choisissez le type de site vitrine qui vous convient.<br><br>
+En choisissant ou en cliquant sur un type spécifique,un message sera envoyé aux admins qui vous répondent via SMS ou whatsapp.
+</div> 
+ 
+ <br><br><br><br>
+ <div style="border:1px solid #ccc; box-shadow: 0 2px 4px rgba(0,0,0,0.2); width:90%;">
+<br>  <img src="https://i.ibb.co/Z1JtDxZB/IMG-20260218-WA0009-1.jpg"  style="width:200px; height:200px; clip-path:circle(50% at 50% 50%);">
+ <br><p style="color:#1c1c1e;">Votre site est créé par l'entreprise Mindy(MdE).</p><br></div
+ 
+ ><br><br><br>
+ <!-- bouton animé  et bouton message -->
+<hr> 
+ <p style="color:green;">pour plus d'informations,vous pouvez: </p>
+ <br>
+ <div><p>laisser un message à l'entreprise </p><br><br><a href="sms:+2432151402" class="message" style="text-decoration:none;">message</a>
+ </div>
+ <br>
+ <p>ou directement nous appeler</p>
+ <br><br>
+ <div id="anim">
+<div><button id="btn"> > </button></div>
+ 
+ <div ="for"><a href="tel:+243832151402" id="a"><button class="message" >Appeller</button></a></div><hr>
+ <br><br><br><br>
+ <br><br><br><br>
+ 
+ 
+ <br><br><br><br><br>
+
+    </main>
+    <footer><br>web development<br>
+<p><img src="https://i.ibb.co/Z1JtDxZB/IMG-20260218-WA0009-1.jpg"  style="width:50px; height:50px; clip-path:circle(50% at 50% 50%);">  <br><u>MindyEntreprise</u></p>
+   
+
+    <br>
+    </footer>  
+    
+    
+    
+    
+    
+    
+    
+</body>
+<script>
+    
+    
+   
+    
+    
+    
+const mar=document.getElementById
+("pointer");
+
+mar.addEventListener('click',()=>{
+point.style.display=
+point.style.display=== "block"?"none":"block";
+})
+    
+    
+    //to share the site
+
+    
+    
+  // function for the text
+  function site(){
+const nar=document.getElementById("hide");
+nar.style.display=
+nar.style.display=== "block"?"none":"block";
+}
+
+
+//to share the site
+
+//to share the site
+
+function shareSite(){
+    if(navigator.share){
+        navigator.share({
+            title:document.title,
+            text:"crée tes propres sites vitrines avec l'entreprise Mindy (MdE)."
+          
+        })
+    }
+    else{
+        alert("le partage de MdE n'est pas supporté sur ce navigateur !");
+    }
+}
+
+
+  </script>
+</html>
